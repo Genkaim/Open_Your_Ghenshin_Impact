@@ -1,0 +1,12 @@
+#判断颜色占据像素的阈值，例如白色占整个屏幕像素大于等于0.5（50%）时，会原神，启动！
+threshold= 0.5
+#判断次数
+get_count= 114514
+#判断间隔，单位：秒
+sleep_second= 0.1
+#原神文件目录（运行文件/快捷方式）
+genshin_path= C:\ProgramData\Microsoft\Windows\Start Menu\Programs\云·原神\云·原神.lnk
+#打开原神后停止一段时间不判断，单位：秒
+opening_sleep_second= 200
+#判断的颜色范围，例如判断rgb为200-255的像素为白色
+color_range= 200
