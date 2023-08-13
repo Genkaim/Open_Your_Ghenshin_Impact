@@ -15,7 +15,8 @@ def get_percent(img_path, low, high):
     return percentage
 
 config = {}
-with open('config.txt', 'r', encoding='utf-8') as f:
+config_path = os.getcwd() + "\config.txt"
+with open(config_path, 'r', encoding='utf-8') as f:
     for line in f:
         if not line.startswith('#'):
             key, value = line.split('=')
@@ -32,7 +33,8 @@ for i in range(get_count):
     time.sleep(sleep_second)#单位是秒
     current_dir = os.getcwd()
     img_path = os.path.join(current_dir, 'display.png')
-    os.remove(img_path)
+    if os.path.exists(img_path):
+        os.remove(img_path)
     ss_img = ImageGrab.grab()
     ss_img.save(img_path)
     if get_percent(img_path, [color_range, color_range, color_range], [255, 255, 255]) >= threshold:
