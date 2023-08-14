@@ -1,17 +1,12 @@
-from ctypes import *
 from PIL import ImageGrab
 from PIL import Image
-from PyQt5 import QtWidgets, QtCore, QtGui
 import os
 import time
 import numpy as np
 import pystray
-import time
-import sys
 import ctypes
 import msvcrt
 import threading
-import subprocess
 import win32api
 import win32con
 import winreg
