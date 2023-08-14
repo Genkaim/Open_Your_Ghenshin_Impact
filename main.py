@@ -31,11 +31,6 @@ def find_genshin_path():
     except FileNotFoundError:
         return None
 
-t = threading.Thread(target = hw)
-
-print("开始运行了喵🥳", end = "\n\n")
-print("*因为time.sleep()函数放置位置和多线程的原因, 运行时间和Done的比值不一定为判断间隔🥲 ", end = "\n\n")
-start_time = time.time()
 def get_percent(low, high):
     width, height = ss_img.size
     data = np.array(ss_img)
@@ -46,6 +41,12 @@ def get_percent(low, high):
 def get_now_time():
     end_time = time.time()
     return end_time - start_time
+
+t = threading.Thread(target = hw)
+
+print("开始运行了喵🥳", end = "\n\n")
+print("*因为time.sleep()函数放置位置和多线程的原因, 运行时间和Done的比值不一定为判断间隔🥲 ", end = "\n\n")
+start_time = time.time()
 
 config = {}
 config_path = os.getcwd() + "\config.txt"
@@ -79,7 +80,6 @@ if(allow_f == 1):
     else:
         print("Error: 找不到原神安装目录, 请尝试手动添加路径", end = "\n")
         _flag = 1
-
 
 #main
 count = 0;
