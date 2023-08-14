@@ -8,7 +8,7 @@
 ## 3. 配置config.txt
 ## 4. 原神，启动！
 
-![image-20230814200216753](https://raw.gitmirror.com/genkaim/blog_pic/main/data/202308142002023.png)
+<img src="https://raw.gitmirror.com/genkaim/blog_pic/main/data/202308142002023.png" alt="image-20230814200216753" height=30% width=30% />
 
 受不了了！开导!🥵🥵🥵🥵
 
