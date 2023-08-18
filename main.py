@@ -86,7 +86,6 @@ count = 0;
 while(_flag != 1):
     time.sleep(sleep_second)#单位是秒
     count += 1
-    current_dir = os.getcwd()
     ss_img = ImageGrab.grab()
     _time = get_now_time()
     if _time >= time_limit:
